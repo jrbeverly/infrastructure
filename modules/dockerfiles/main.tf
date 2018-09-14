@@ -75,22 +75,26 @@ resource "gitlab_project" "docker-sonarr" {
   name         = "docker-sonarr"
   description  = "Dockerized Sonarr"
   namespace_id = "${gitlab_group.main.id}"
+  visibility_level = "public"
 }
 
 resource "gitlab_project" "docker-alpine" {
   name         = "docker-alpine"
   description  = "A minimal Alpine base image modified for Docker applications"
   namespace_id = "${gitlab_group.main.id}"
+  visibility_level = "public"
 }
 
 resource "gitlab_project" "docker-deluge" {
   name         = "docker-deluge"
   description  = "Dockerized Deluge"
   namespace_id = "${gitlab_group.main.id}"
+  visibility_level = "public"
 }
 
 resource "gitlab_project" "docker-plex" {
   name         = "docker-plex"
   description  = "Dockerized Plex Media Server"
   namespace_id = "${gitlab_group.main.id}"
+  visibility_level = "public"
 }

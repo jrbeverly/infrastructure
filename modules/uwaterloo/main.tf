@@ -33,28 +33,33 @@ resource "gitlab_project" "raytracer" {
   name         = "raytracer"
   description  = "Renders an image by tracing the ray of light"
   namespace_id = "${gitlab_group.main.id}"
+  visibility_level = "public"
 }
 
 resource "gitlab_project" "jcompiler" {
   name         = "jcompiler"
   description  = "Compiler written for a subset of the Java language"
   namespace_id = "${gitlab_group.main.id}"
+  visibility_level = "public"
 }
 
 resource "gitlab_project" "shroud-net" {
   name         = "shroud-net"
   description  = "Lossless steganography in .NET"
   namespace_id = "${gitlab_group.main.id}"
+  visibility_level = "public"
 }
 
 resource "gitlab_project" "jotto" {
   name         = "jotto"
   description  = "Jotto, a two person logic-oriented word game where each player picks a secret word and attempts to guess it"
   namespace_id = "${gitlab_group.main.id}"
+  visibility_level = "public"
 }
 
 resource "gitlab_project" "distributedrpc" {
   name         = "distributedrpc"
   description  = "Distributed implementation of a remote procedure call (RPC) library"
   namespace_id = "${gitlab_group.main.id}"
+  visibility_level = "public"
 }
