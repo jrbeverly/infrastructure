@@ -70,12 +70,6 @@ module "stacks" {
   parent = "${gitlab_group.primary.id}"
 }
 
-module "udacity" {
-  source = "./modules/udacity"
-
-  parent = "${gitlab_group.primary.id}"
-}
-
 module "uwaterloo" {
   source = "./modules/uwaterloo"
 
