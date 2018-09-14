@@ -3,30 +3,35 @@ resource "gitlab_group" "main" {
   path        = "uwaterloo"
   description = "University of Waterloo Courseware projects"
   parent_id   = "${var.parent}"
+  visibility_level = "public"
 }
 
 resource "gitlab_project" "jollybot" {
   name         = "jollybot"
   description  = "A Prisoners' Dilemma A.I. bot performing an 'Olive Branch' strategy focusing on attempting to cooperate whenever possible"
   namespace_id = "${gitlab_group.main.id}"
+  visibility_level = "public"
 }
 
 resource "gitlab_project" "mazes" {
   name         = "mazes"
   description  = "Generate random mazes"
   namespace_id = "${gitlab_group.main.id}"
+  visibility_level = "public"
 }
 
 resource "gitlab_project" "animator" {
   name         = "animator"
   description  = "A simple line animation program"
   namespace_id = "${gitlab_group.main.id}"
+  visibility_level = "public"
 }
 
 resource "gitlab_project" "automata-net" {
   name         = "automata-net"
   description  = "A .NET Library for Automata"
   namespace_id = "${gitlab_group.main.id}"
+  visibility_level = "public"
 }
 
 resource "gitlab_project" "raytracer" {

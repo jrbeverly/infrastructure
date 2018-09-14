@@ -3,6 +3,7 @@ resource "gitlab_group" "main" {
   path        = "homelab"
   description = "Experimentation with self-hosted services on my own hardware."
   parent_id   = "${var.parent}"
+  visibility_level = "public"
 }
 
 resource "gitlab_project" "homelab" {
