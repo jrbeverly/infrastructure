@@ -12,3 +12,5 @@ validate:
   image: hashicorp/terraform:light
   script:
     - echo "Hello World"
+  entrypoint:
+    - bash
