@@ -1,0 +1,14 @@
+
+stages:
+  - "Validate"
+  - "Format"
+  - "Acceptance"
+
+before_script:
+  - terraform --version
+
+validate:
+  stage: "Validate"
+  image: hashicorp/terraform:light
+  script:
+    - echo "Hello World"
