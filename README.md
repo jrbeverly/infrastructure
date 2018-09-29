@@ -14,4 +14,4 @@ terraform apply
 
 ## Notes
 
-A good collection of notes:
+This was a simple experiment making use of the `gitlab` provider of terraform. The idea was to see if it would assist in the process of maintaining `jrbeverlylabs` between gitlab.com and my internal gitlab instance.
