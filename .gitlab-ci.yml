@@ -5,7 +5,7 @@ stages:
   - "Acceptance"
 
 before_script:
-  - terraform --version
+  - terraform version
 
 validate:
   stage: "Validate"
