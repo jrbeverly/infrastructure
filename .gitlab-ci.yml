@@ -6,6 +6,7 @@ image:
 
 before_script:
   - terraform --version
+  - terraform init
 
 stages:
   - Validation
