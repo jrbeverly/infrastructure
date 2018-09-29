@@ -1,16 +1,32 @@
-
-stages:
-  - "Validate"
-  - "Format"
-  - "Acceptance"
+image:
+  name: hashicorp/terraform:light
+  entrypoint:
+    - '/usr/bin/env'
+    - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
 
 before_script:
-  - terraform version
+  - terraform --version
+
+stages:
+  - Validation
+  - Formatting
+  - Acceptance
 
 validate:
-  stage: "Validate"
-  image: hashicorp/terraform:light
+  stage: Validation
   script:
-    - echo "Hello World"
-  entrypoint:
-    - bash
+    - terraform validate
+
+fmt:
+  stage: Formatting
+  script:
+    - echo "Hello world"
+  dependencies:
+    - validate
+
+tflint:
+  stage: Acceptance
+  script:
+    - echo "Hello world"
+  dependencies:
+    - fmt
