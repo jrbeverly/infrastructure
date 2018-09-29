@@ -1,6 +1,8 @@
 # Infrastructure
 
-Configuration in this directory creates the gitlab environment.
+## Summary
+
+The specification of `jrbeverlylabs` as a set of terraform modules.
 
 ## Usage
 
