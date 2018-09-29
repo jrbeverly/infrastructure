@@ -8,9 +8,9 @@ provider "gitlab" {
 ## Root Gitlab
 
 resource "gitlab_group" "primary" {
-  name        = "Repositories - jrbeverly"
-  path        = "jrbeverlylabs"
-  description = "The personal repositories of jrbeverly."
+  name             = "Repositories - jrbeverly"
+  path             = "jrbeverlylabs"
+  description      = "The personal repositories of jrbeverly."
   visibility_level = "public"
 }
 
