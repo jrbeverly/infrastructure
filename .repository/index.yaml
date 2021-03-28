@@ -1,0 +1,19 @@
+slug: infrastructure-labs
+description: Terraform modules that define 'Repositories - jrbeverly'
+project: workbench
+namespace:
+status: archived
+icon: icon.svg
+license:
+  type: MIT
+  content: Jonathan Beverly <jrbeverly>
+  year: 2018
+topics: |-
+  [
+    "terraform",
+    "terraform-modules",
+    "gitlab",
+    "gitlab-groups",
+    "repositories",
+    "repository-management"
+  ]
